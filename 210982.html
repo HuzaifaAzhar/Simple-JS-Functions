@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-step Registration Form</title>
+<script src="210982.js"></script>
+</head>
+<body>
+  <form id="registrationForm">
+    <div id="step1">
+      <h2>Step 1: Personal Information</h2>
+      <input type="text" name="fullname" placeholder="Full Name">
+      <input type="email" name="email" placeholder="Email">
+      <input type="checkbox" name="interests" value="gaming"> Gaming
+      <input type="checkbox" name="interests" value="driving"> Driving
+      <input type="checkbox" name="interests" value="hacking"> Hacking
+      <input type="button" value="Select All" onclick="selectAllCheckboxes()">
+      <input type="button" value="Unselect All" onclick="unselectAllCheckboxes()">
+      <input type="button" value="Get Selected" onclick="getSelectedCheckboxes()">
+      <button type="button" onclick="nextStep()">Next</button>
+
+    </div>
+  </form>
+<form> <div id="step2" style="display: none;">
+    <h2>Step 2: Account Information</h2>
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <button type="button" onclick="nextPage()">Next</button>
+  </div></form>
+  <script>
+
+  </script>
+</body>
+</html>
